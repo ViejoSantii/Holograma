@@ -44,7 +44,7 @@
 
             const ligth = new THREE.AmbientLight(0xffffff,1)
             scene.add(ligth);
-            ligth.intensity = 100;
+            ligth.intensity = 50;
              
             const spotLight = new THREE.SpotLight(0xffffff, 1);
             spotLight.position.set(10,30,10);
@@ -52,7 +52,7 @@
             spotLight.penumbra = 1;
             spotLight.decay = 50;
             spotLight.distance = 0;
-            spotLight.intensity = 100;
+            spotLight.intensity = 50;
              
             spotLight.castShadow = true;
             spotLight.shadow.mapSize.width = 2000;
