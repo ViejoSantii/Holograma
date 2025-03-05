@@ -44,7 +44,7 @@
 
             const ligth = new THREE.AmbientLight(0xffffff,1)
             scene.add(ligth);
-            ligth.intensity = 20;
+            ligth.intensity = 25;
              
             const spotLight = new THREE.SpotLight(0xffffff, 1);
             spotLight.position.set(10,30,10);
@@ -52,7 +52,7 @@
             spotLight.penumbra = 1;
             spotLight.decay = 50;
             spotLight.distance = 0;
-            spotLight.intensity = 20;
+            spotLight.intensity = 25;
              
             spotLight.castShadow = true;
             spotLight.shadow.mapSize.width = 2000;
@@ -116,7 +116,7 @@ fbxloader.load(
             // Animaciones
             function animate() {
                 if (MyObj){
-                 MyObj.rotation.y +=0.01;
+                 MyObj.rotation.y +=0.05;
                  //MyObj.rotation.x +=0.02;
                 }
                  //cube.rotation.y += 0.1;
